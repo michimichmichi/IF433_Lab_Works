@@ -14,6 +14,7 @@ class Player ( var username: String){
             } else {
                 xp += amount
                 println(" Current level is $level")
+
         }
         var newlevel = level
 
