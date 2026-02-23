@@ -1,3 +1,5 @@
+package oop_114755_MichelleOliviaHerijanto.week04
+
 open class Vehicle(val brand: String) {
     var speed: Int = 0
 
