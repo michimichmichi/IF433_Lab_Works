@@ -1,4 +1,4 @@
-package week03
+package oop_114755_MichelleOliviaHerijanto.week03
 
 class Player ( var username: String){
     private var xp: Int = 0
