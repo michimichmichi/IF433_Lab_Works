@@ -18,6 +18,22 @@ fun main() {
     electricCar.accelerate()
     electricCar.honk()
 
+    println("---- MANAGER ----")
+    val manager = Manager (name = "Budi", baseSalary = 1000000)
+    manager.work()
+    manager.calculateBonus()
+    println("Bonus Manager ${manager.name}: ${manager.calculateBonus()}")
+
+
+    println("---- DEVELOPER ---")
+    val developer = Developer(name = "Susi", baseSalary = 500000, programmingLanguage = "PHP")
+    developer.work()
+    developer.calculateBonus()
+    println("Bonus Manager ${developer.name}: ${developer.calculateBonus()}")
+
+
+
+
 }
 
 
