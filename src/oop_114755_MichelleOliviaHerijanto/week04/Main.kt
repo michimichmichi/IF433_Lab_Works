@@ -1,7 +1,6 @@
-import oop_114755_MichelleOliviaHerijanto.week04.Car
-import oop_114755_MichelleOliviaHerijanto.week04.Vehicle
+package oop_114755_MichelleOliviaHerijanto.week04
 
-fun main(){
+fun main() {
     println("--- Testing Vehicle ---")
     val generalVehicle = Vehicle(brand = "Sepeda Onthel")
     generalVehicle.honk()
@@ -13,3 +12,4 @@ fun main(){
     myCar.honk()
     myCar.accelerate()
 }
+
