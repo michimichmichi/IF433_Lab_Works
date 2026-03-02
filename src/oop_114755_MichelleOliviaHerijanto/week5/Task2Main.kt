@@ -7,6 +7,11 @@ fun main(){
     val daftarPaymentMethod : List<PaymentMethod> = listOf(eWal, CC)
     for (payment in daftarPaymentMethod){
         payment.processPayment(75000.0)
+    when(payment){ is EWallet ->{
+        payment.topUp(50000.00)
+        payment.processPayment(75000.0)
+    }}
+
 
     }
 }
