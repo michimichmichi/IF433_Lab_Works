@@ -10,4 +10,14 @@ fun main(){
     val cctv = SmartCCTV()
     cctv.name = "Ezviz Garasi"
 
+    val home = SmartHomeHub()
+    home.addDevice(cctv)
+    home.addDevice(lamp)
+    home.addDevice(speaker)
+
+    home.activateSecurityMode()
+    home.turnOffAllSwitches()
+
+
+
 }
