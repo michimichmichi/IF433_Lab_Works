@@ -1,8 +1,8 @@
 package oop_114755_MichelleOliviaHerijanto.week06
 
 interface SmartDevice {
-    val id : String
-    val name: String
+    var id : String
+    var name: String
 }
 
 interface Switchable {
