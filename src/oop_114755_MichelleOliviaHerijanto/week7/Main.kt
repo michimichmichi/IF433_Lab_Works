@@ -14,17 +14,17 @@ fun main () {
     val reg2 = RegularUser("Alice", 22)
 
     println(reg1)
-    println("Sama? ${reg1==reg2}")
+    println("Sama? ${reg1 == reg2}")
 
     println("\n== TEST DATA CLASS ===")
     val data1 = DataUser("Alice", 22)
     val data2 = DataUser("Alice", 22)
     println(data1)
-    println("Sama? ${data1==data2}")
+    println("Sama? ${data1 == data2}")
 
     val data3 = data1.copy(age = 23)
     println("Hasil Copy: $data3")
 
-    val(userName,userAge) = data1
+    val (userName, userAge) = data1
     println("Destructed: $userName berumur $userAge")
 }
