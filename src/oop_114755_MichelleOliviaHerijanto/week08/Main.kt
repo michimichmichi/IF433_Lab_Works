@@ -1,6 +1,6 @@
-import oop_114755_MichelleOliviaHerijanto.week08.LegacyJavaAPI
-import oop_114755_MichelleOliviaHerijanto.week08.Order
-import oop_114755_MichelleOliviaHerijanto.week08.UserProfile
+package oop_114755_MichelleOliviaHerijanto.week08
+
+import oop_114755_MichelleOliviaHerijanto.week08.DatabaseMock.runMockUnitTest
 
 fun main(){
     println("=== TEST SAFE CALLS & ELVIS ===")
@@ -60,4 +60,6 @@ fun main(){
 
     val statusLength = javaResponse!!.length
     println("Status dari Java: $javaResponse (Length: $statusLength")
+
+    runMockUnitTest()
 }
