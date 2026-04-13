@@ -1,3 +1,4 @@
+import oop_114755_MichelleOliviaHerijanto.week08.LegacyJavaAPI
 import oop_114755_MichelleOliviaHerijanto.week08.Order
 import oop_114755_MichelleOliviaHerijanto.week08.UserProfile
 
@@ -53,4 +54,10 @@ fun main(){
     }catch (e: IllegalArgumentException){
         println(e.message)
     }
+
+    println("\n=== TEST JAVA INTERROP ===")
+    val javaResponse = LegacyJavaAPI.fetchServerStatus()
+
+    val statusLength = javaResponse!!.length
+    println("Status dari Java: $javaResponse (Length: $statusLength")
 }
