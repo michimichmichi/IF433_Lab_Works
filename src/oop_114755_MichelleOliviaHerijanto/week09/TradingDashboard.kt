@@ -20,7 +20,11 @@ fun main(){
             "WIN [${it.pair} - ${it.position}]: +${it.roe}% ROE (Lev: ${it.leverage}x)"
         }
 
-
+    val worstPerformersString = losingTrades
+        .sortedBy { it.roe }
+        .map{
+            "LOST [${it.pair} - ${it.position}]: ${it.roe}% ROE (Lev: ${it.leverage}x)"
+        }
 
 
 }
