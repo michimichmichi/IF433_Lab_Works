@@ -1,6 +1,6 @@
 package oop_114755_MichelleOliviaHerijanto.week10
 
-class WalletRepository<T> {
+class WalletRepository<T : Any> {
 
     private val items = mutableListOf<T>()
 
@@ -10,5 +10,9 @@ class WalletRepository<T> {
 
     fun getAll(): List<T> {
         return items
+    }
+
+    fun findByName(nama: String, selector: (T) -> String): List<T> {
+        return items.filter { selector(it) == nama }
     }
 }
