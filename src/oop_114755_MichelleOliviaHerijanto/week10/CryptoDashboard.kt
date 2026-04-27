@@ -18,4 +18,17 @@ fun main() {
     txRepo.add(Transaction("TX001",  0.1))
     txRepo.add(Transaction("TX002",  1.5))
     txRepo.add(Transaction("TX003",  500.0))
+
+    println("\n=== Transactions ===")
+
+    txRepo.getAll().forEach { tx ->
+        println("ID: ${tx.id},  Amount: ${tx.amount}")
+    }
+
+    val result = coinRepo.findByName("BTC") { it.name }
+
+    println("\n=== Search Coin BTC ===")
+    result.forEach {
+        println("Coin: ${it.name}, Balance: ${it.balance}")
+    }
 }
