@@ -29,11 +29,16 @@ fun main() {
     val searchResult = homeDevices.find {
         it.category == "Camera"
     }
-    searchResult?.let{
+    searchResult?.let {
         val result = it.diagnose()
         println(result)
     }
     with(homeDevices) {
         println("Jumlah perangkat: ${this.size}")
     }
+
+    val totalPower = homeDevices.run {
+        sumOf { it.powerLoad }
+    }
+    println("Total daya: $totalPower Watt")
 }
