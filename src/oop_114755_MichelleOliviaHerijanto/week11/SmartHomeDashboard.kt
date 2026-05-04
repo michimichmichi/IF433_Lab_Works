@@ -33,5 +33,7 @@ fun main() {
         val result = it.diagnose()
         println(result)
     }
-
+    with(homeDevices) {
+        println("Jumlah perangkat: ${this.size}")
+    }
 }
