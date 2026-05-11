@@ -35,3 +35,8 @@ fun main(){
         println("Makan sore sukses! Sisa stok kibble: $currentKibbleStock gr") }
         .onFailure { error -> println("Peringatan ke Pemilik: ${error.message}, \n sayangi hamster lucu! berikan chicken jerky secara manual") }
 }
+
+//Hasil: Food Error: Kibble tidak cukup! Diminta 80 gr, sisa 50 gr
+//Siklus pengecekan dispenser pagi selesai.
+//Kibble berhasil dikeluarkan!
+//Makan sore sukses! Sisa stok kibble: 70 gr
