@@ -26,4 +26,7 @@ fun main(){
         }catch (e: Exception){
             println("General Error occured")
         }
+    finally {
+        println("Siklus pengecekan dispenser pagi selesai.")
+    }
 }
