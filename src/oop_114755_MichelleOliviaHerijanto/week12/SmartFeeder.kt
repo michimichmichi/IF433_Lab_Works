@@ -32,5 +32,6 @@ fun main(){
 
     runCatching { dispenseKibble(30, 100, false) }
         .onSuccess { newStock -> currentKibbleStock = newStock
-        println("Makan sore sukses! Sisa stok kibble: $currentKibbleStock gr")
-}}
+        println("Makan sore sukses! Sisa stok kibble: $currentKibbleStock gr") }
+        .onFailure { error -> println("Peringatan ke Pemilik: ${error.message}, \n sayangi hamster lucu! berikan chicken jerky secara manual") }
+}
